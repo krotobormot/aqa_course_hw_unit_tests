@@ -27,9 +27,11 @@ for (let i = 10; i >= 0; i -= 2) {
 let smilePatternResult = '';
 
 for (let i = 1; i <= 5; i++) {
-  smilePatternResult += ':)'.repeat(i) + '\n';
+  smilePatternResult += ':)'.repeat(i);
+  if (i < 5) {
+    smilePatternResult += '\n';
+  }
 }
-
 /**
  * Заменить все пробелы в переменной text на "1".
  * Переменная для результата `replaceSpacesWithOneResult` уже создана и содержит пустую строку.
