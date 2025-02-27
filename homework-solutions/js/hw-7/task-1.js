@@ -5,8 +5,8 @@
   - Например: mergeArrays([1,2], [3,4], [5,6]) // [1,2,3,4,5,6]
   - Решить с использованием Spread operator
 */
-function mergeArrays() {
-  // Ваш код
+function mergeArrays(...arr) {
+  return arr.flat();
 }
 /*
   2. Devide by _
@@ -15,7 +15,7 @@ function mergeArrays() {
     - Пример: I am super engineer => i_Am_Super_Engineer
   */
 function devideBy(sentence) {
-  // Ваш код
+  return sentence.split(' ').join('_');
 }
 /*
   3. Фибаначчи
